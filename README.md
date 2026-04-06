@@ -1,113 +1,122 @@
-# Linux Assignment
+# 🐧 Linux Learning
 
-## SECTION 1 – Write the purpose and an example usage for each command.
+> I learn Linux commands, practice them hands-on, and upload everything I explore here.
 
-1. `pwd` - Shows current directory  
-2. `ls` - Shows current floder's files or floder  
-3. `cd` - Used to switch the floder  
-4. `mkdir` - Used to create floder  
-5. `rm -rf` - Used to Delete the floder  
-6. `ps -ef` - Shows the all running process detials  
-7. `top` - Shows CPU Usages and running processes  
-8. `df -h` - Check the disk storage usage of the server  
-9. `history` - Shows history  
-10. `uptime` - Shows duration of system using  
+---
 
+## 📖 Command Reference
 
-## SECTION 2 – Write the Linux command for the following tasks.
+| Command | Purpose | Example |
+|---------|---------|---------|
+| `pwd` | Shows current directory | `pwd` |
+| `ls` | Shows current folder's files or folder | `ls` |
+| `cd` | Used to switch the folder | `cd foldername` |
+| `mkdir` | Used to create folder | `mkdir myfolder` |
+| `rm -rf` | Used to delete the folder | `rm -rf myfolder` |
+| `ps -ef` | Shows all running process details | `ps -ef` |
+| `top` | Shows CPU usage and running processes | `top` |
+| `df -h` | Check the disk storage usage of the server | `df -h` |
+| `history` | Shows history | `history` |
+| `uptime` | Shows duration of system using | `uptime` |
 
-1. Create a directory called project-files  
-```
+---
+
+## 🛠️ Tasks
+
+**1. Create a directory called project-files**
+```bash
 mkdir project-files
 ```
 
-2. Navigate into the project-files directory  
-```
+**2. Navigate into the project-files directory**
+```bash
 cd project-files
 ```
 
-3. Create a file called notes.txt using vi  
-```
+**3. Create a file called notes.txt using vi**
+```bash
 vi notes.txt
 ```
 
-4. Display the contents of notes.txt  
-```
+**4. Display the contents of notes.txt**
+```bash
 cat notes.txt
 ```
 
-5. Copy notes.txt to backup.txt  
-```
+**5. Copy notes.txt to backup.txt**
+```bash
 cat notes.txt backup.txt
 ```
 
-6. Show the first 100 lines of a file called logs.txt  
-```
+**6. Show the first 100 lines of a file called logs.txt**
+```bash
 head -n 100 logs.txt
 ```
 
-7. Show the last 100 lines of logs.txt  
-```
+**7. Show the last 100 lines of logs.txt**
+```bash
 tail -n 100 logs.txt
 ```
 
-8. Check the disk storage usage of the server  
-```
+**8. Check the disk storage usage of the server**
+```bash
 df -h
 ```
 
-9. Check the running processes in the system  
-```
+**9. Check the running processes in the system**
+```bash
 ps -ef
 ```
 
-10. Delete a file called temp.txt  
-```
+**10. Delete a file called temp.txt**
+```bash
 rm temp.txt
 ```
 
+---
 
-## SECTION 3 – Concept Questions
+## 💡 Concepts
 
-1. What is the difference between `>` and `>>` in Linux?  
-`>` is override the old content and copy the given content and `>>` is used to append the content to old content.
+**1. What is the difference between `>` and `>>`?**
+`>` overrides the old content and copies the given content and `>>` is used to append the content to old content.
 
-2. What is the purpose of `kill -9` command?  
-it is used to terminate the given process ID immedately
+**2. What is the purpose of `kill -9`?**
+It is used to terminate the given process ID immediately.
 
-3. What is the difference between `rm` and `rmdir`?  
-rm is used to delete the files and rmdir is used to delete the empty floder
+**3. What is the difference between `rm` and `rmdir`?**
+`rm` is used to delete the files and `rmdir` is used to delete the empty folder.
 
-4. What information does `netstat -tulpn` command provide?  
+**4. What information does `netstat -tulpn` provide?**
 It shows running services and their port numbers in the system.
 
-5. What is the purpose of `ping` command?  
-that used to check the connectivity between system and server.
+**5. What is the purpose of `ping`?**
+That used to check the connectivity between system and server.
 
+---
 
-## SECTION 4 – Scenario based Questions
+## 🔍 Scenarios
 
-1. You want to check the current working directory.  
-```
+**1. Check the current working directory**
+```bash
 pwd
 ```
 
-2. You want to create a directory called devops inside the home directory.  
-```
+**2. Create a directory called devops inside the home directory**
+```bash
 mkdir devops
 ```
 
-3. You want to check which process is using high CPU in the system.  
-```
+**3. Check which process is using high CPU**
+```bash
 top
 ```
 
-4. You want to check whether your server can connect to google.com.  
-```
+**4. Check whether your server can connect to google.com**
+```bash
 ping google.com
 ```
 
-5. You want to view the last 50 lines of a log file called application.log.  
-```
+**5. View the last 50 lines of application.log**
+```bash
 tail -n 50 application.log
 ```
